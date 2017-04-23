@@ -1,3 +1,6 @@
 <resources>
     <string name="app_name">FilterApp</string>
+    <string name="takephoto">Take Photo</string>
+    <string name="choosephoto">Choose Photo</string>
+    <string name="desc">Description</string>
 </resources>

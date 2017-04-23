@@ -4,7 +4,7 @@ import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.Button;
+import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.net.Uri;
 
@@ -18,7 +18,7 @@ public class MyCameraActivity extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.main);
         this.imageView = (ImageView)this.findViewById(R.id.imageView1);
-        Button takePicture = (Button) this.findViewById(R.id.button1);
+        ImageButton takePicture = (ImageButton) this.findViewById(R.id.button1);
         takePicture.setOnClickListener(new View.OnClickListener() {
 
             @Override
@@ -27,7 +27,7 @@ public class MyCameraActivity extends Activity {
                 startActivityForResult(takePicture, TAKE_PHOTO);//zero can be replaced with any action code
             }
         });
-        Button choosePhoto = (Button) this.findViewById(R.id.button2);
+        ImageButton choosePhoto = (ImageButton) this.findViewById(R.id.button2);
         choosePhoto.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
