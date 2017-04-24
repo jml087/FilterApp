@@ -23,8 +23,8 @@ public class MyCameraActivity extends Activity {
 
             @Override
             public void onClick(View v) {
-                Intent takePicture = new Intent(android.provider.MediaStore.ACTION_IMAGE_CAPTURE);
-                startActivityForResult(takePicture, TAKE_PHOTO);//zero can be replaced with any action code
+                Intent takePhoto = new Intent(android.provider.MediaStore.ACTION_IMAGE_CAPTURE);
+                startActivityForResult(takePhoto, TAKE_PHOTO);//zero can be replaced with any action code
             }
         });
         ImageButton choosePhoto = (ImageButton) this.findViewById(R.id.button2);
